@@ -31,7 +31,7 @@ function toggleContacts() {
     toggleButton.textContent = contactInfo.classList.contains('active') ? '✕' : '☰';
 }
 
-// Add smooth scroll behavior and interactive effects
+// Add interactive effects
 document.addEventListener('DOMContentLoaded', function() {
     // Add hover effects to contact items
     const contactItems = document.querySelectorAll('.contact-item');

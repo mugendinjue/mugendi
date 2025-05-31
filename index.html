@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mugendi - Personal Profile</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,30 +17,32 @@
                     <h1 class="name">Mugendi Njue</h1>
                     <p class="title">Software Engineer</p>
                 </div>
+                <button class="toggle-contacts" onclick="toggleContacts()">☰</button>
             </div>
-            <button class="toggle-contacts" onclick="toggleContacts()">☰</button>
+            
             <div class="contact-info" id="contact-info">
                 <div class="contact-item">
                     <div class="contact-icon">📧</div>
-                    <div>
-                        <div style="font-size: 12px; color: #888;">EMAIL</div>
-                        <div style="font-size: 14px;">mugendinjue7@gmail.com</div>
+                    <div class="contact-content">
+                        <div class="contact-label">EMAIL</div>
+                        <div class="contact-value">mugendinjue7@gmail.com</div>
                     </div>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">📱</div>
-                    <div>
-                        <div style="font-size: 12px; color: #888;">PHONE</div>
-                        <div style="font-size: 14px;">+254 723522398</div>
+                    <div class="contact-content">
+                        <div class="contact-label">PHONE</div>
+                        <div class="contact-value">+254 723522398</div>
                     </div>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">📍</div>
-                    <div>
-                        <div style="font-size: 12px; color: #888;">LOCATION</div>
-                        <div style="font-size: 14px;">Nairobi, Kenya</div>
+                    <div class="contact-content">
+                        <div class="contact-label">LOCATION</div>
+                        <div class="contact-value">Nairobi, Kenya</div>
                     </div>
                 </div>
+                
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/mugendi-njue-331a2a181/" class="social-link" target="_blank" aria-label="LinkedIn Profile">💼</a>
                     <a href="https://github.com/mugendinjue" target="_blank" class="social-link" aria-label="GitHub Profile">🐙</a>
@@ -57,110 +60,114 @@
             <div id="about" class="content-section active">
                 <h2 class="section-title">About Me</h2>
                 <p class="about-text">
-                    As a software developer, I’m passionate about building user-centric solutions that solve real-world problems. I focus on understanding the needs behind the user code — whether that’s through enhancing product functionality, improving user experience, or driving scalable innovation through technology. I thrive in collaborative environments where ideas are shared, challenged, and refined into impactful outcomes.
+                    As a software developer, I'm passionate about building user-centric solutions that solve real-world problems. I focus on understanding the needs behind the user code — whether that's through enhancing product functionality, improving user experience, or driving scalable innovation through technology. I thrive in collaborative environments where ideas are shared, challenged, and refined into impactful outcomes.
                 </p>
                 <p class="about-text">
-                    I’m particularly interested in the intersection of technology and business — how innovative software can create value, improve processes, and open up new opportunities. I enjoy working across disciplines, learning from others, and contributing to both strategic and technical conversations.
+                    I'm particularly interested in the intersection of technology and business — how innovative software can create value, improve processes, and open up new opportunities. I enjoy working across disciplines, learning from others, and contributing to both strategic and technical conversations.
                 </p>
                 <p class="about-text">
-                    Beyond development, I’m deeply interested in emerging technologies, startup ecosystems, and the evolving role of software in shaping industries. I believe that continuous learning, curiosity, and adaptability are key to building the future.
+                    Beyond development, I'm deeply interested in emerging technologies, startup ecosystems, and the evolving role of software in shaping industries. I believe that continuous learning, curiosity, and adaptability are key to building the future.
                 </p>
                 
-                <h3 class="section-title" style="font-size: 24px; margin-top: 40px;">What I'm Doing</h3>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">🌐</div>
-                        <h4 class="service-title">Web Development</h4>
-                        <p class="service-desc">High-quality development of sites at the professional level.</p>
-                    Coordinating</div>
-                    <div class="service-card">
-                        <div class="service-icon">⚡</div>
-                        <h4 class="service-title">Backend Development</h4>
-                        <p class="service-desc">High-performance backend services designed for scalability and seamless user experience.</p>
+                <div class="services-section">
+                    <h3 class="services-title">What I'm Doing</h3>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">🌐</div>
+                            <h4 class="service-title">Web Development</h4>
+                            <p class="service-desc">High-quality development of sites at the professional level.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">⚡</div>
+                            <h4 class="service-title">Backend Development</h4>
+                            <p class="service-desc">High-performance backend services designed for scalability and seamless user experience.</p>
+                        </div>
                     </div>
                 </div>
                 
-                <h3 class="section-title" style="font-size: 24px; margin-top: 40px;">Skills</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <div class="skill-icon">🐍</div>
-                        <div class="skill-name">Python</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">📜</div>
-                        <div class="skill-name">JavaScript</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">📱</div>
-                        <div class="skill-name">Flutter</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">🟢</div>
-                        <div class="skill-name">Node.js</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">☁️</div>
-                        <div class="skill-name">Azure ML</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">☁️</div>
-                        <div class="skill-name">GCP</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">🚀</div>
-                        <div class="skill-name">FastAPI</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">🗄️</div>
-                        <div class="skill-name">PostgreSQL</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">🔥</div>
-                        <div class="skill-name">Firebase</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">🐳</div>
-                        <div class="skill-name">Docker</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">🌐</div>
-                        <div class="skill-name">Next.js</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">☁️</div>
-                        <div class="skill-name">AWS</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">☁️</div>
-                        <div class="skill-name">Microsoft Azure</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">🚀</div>
-                        <div class="skill-name">Express.js</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">🗄️</div>
-                        <div class="skill-name">MySQL</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">🗃️</div>
-                        <div class="skill-name">DBMS</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">🐧</div>
-                        <div class="skill-name">Linux</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">💻</div>
-                        <div class="skill-name">Bash</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">⚛️</div>
-                        <div class="skill-name">React.js</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">🅰️</div>
-                        <div class="skill-name">AngularJS</div>
+                <div class="skills-section">
+                    <h3 class="services-title">Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">🐍</div>
+                            <div class="skill-name">Python</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📜</div>
+                            <div class="skill-name">JavaScript</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📱</div>
+                            <div class="skill-name">Flutter</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🟢</div>
+                            <div class="skill-name">Node.js</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">☁️</div>
+                            <div class="skill-name">Azure ML</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">☁️</div>
+                            <div class="skill-name">GCP</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🚀</div>
+                            <div class="skill-name">FastAPI</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🗄️</div>
+                            <div class="skill-name">PostgreSQL</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🔥</div>
+                            <div class="skill-name">Firebase</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🐳</div>
+                            <div class="skill-name">Docker</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🌐</div>
+                            <div class="skill-name">Next.js</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">☁️</div>
+                            <div class="skill-name">AWS</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">☁️</div>
+                            <div class="skill-name">Microsoft Azure</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🚀</div>
+                            <div class="skill-name">Express.js</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🗄️</div>
+                            <div class="skill-name">MySQL</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🗃️</div>
+                            <div class="skill-name">DBMS</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🐧</div>
+                            <div class="skill-name">Linux</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">💻</div>
+                            <div class="skill-name">Bash</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">⚛️</div>
+                            <div class="skill-name">React.js</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🅰️</div>
+                            <div class="skill-name">AngularJS</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,74 +175,75 @@
             <div id="resume" class="content-section">
                 <h2 class="section-title">Resume</h2>
                 
-                <div class="timeline-section">
-                    <h3 class="section-title" style="font-size: 24px; margin-top: 40px;">Education</h3>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <h4 class="timeline-title">Software Developer Certificate</h4>
-                                <p class="timeline-desc">Moringa School, Kenya</p>
-                                <p class="timeline-details">2019</p>
+                <div class="resume-section">
+                    <div class="timeline-section">
+                        <h3 class="timeline-title">Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4 class="timeline-content-title">Software Developer Certificate</h4>
+                                    <p class="timeline-desc">Moringa School, Kenya</p>
+                                    <p class="timeline-details">2019</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <h4 class="timeline-title">Bachelor's Degree, Mathematics and Computer Science</h4>
-                                <p class="timeline-desc">Jomo Kenyatta University of Agriculture and Technology (JKUAT), Kenya</p>
-                                <p class="timeline-details">2015 -- 2019</p>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4 class="timeline-content-title">Bachelor's Degree, Mathematics and Computer Science</h4>
+                                    <p class="timeline-desc">Jomo Kenyatta University of Agriculture and Technology (JKUAT), Kenya</p>
+                                    <p class="timeline-details">2015 -- 2019</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="timeline-section">
-                    <h3 class="section-title" style="font-size: 24px; margin-top: 40px;">Experience</h3>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <h4 class="timeline-title">Technical Lead – AI-Driven Insurance Solutions (FlipSys-AI)</h4>
-                                <p class="timeline-desc">Innovex Solutions, Nairobi, Kenya (Jan 2025 - Present)</p>
-                                <p class="timeline-details">Leading development of computer vision models for motor insurance claims, building deep learning models for vehicle damage assessment, and designing scalable multi-cloud infrastructure (AWS, Azure) for model training and real-time inference.</p>
+                    
+                    <div class="timeline-section">
+                        <h3 class="timeline-title">Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4 class="timeline-content-title">Technical Lead – AI-Driven Insurance Solutions (FlipSys-AI)</h4>
+                                    <p class="timeline-desc">Innovex Solutions, Nairobi, Kenya (Jan 2025 - Present)</p>
+                                    <p class="timeline-details">Leading development of computer vision models for motor insurance claims, building deep learning models for vehicle damage assessment, and designing scalable multi-cloud infrastructure (AWS, Azure) for model training and real-time inference.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <h4 class="timeline-title">Tech Lead & Backend Engineer – FLIP v2</h4>
-                                <p class="timeline-desc">Innovex Solutions, Nairobi, Kenya (Feb 2024 - Present)</p>
-                                <p class="timeline-details">Spearheaded backend development for a microservice-based motor insurance claims platform using Python (FastAPI), PostgreSQL, and Docker, with front-end collaboration in Next.js for responsive workflows.</p>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4 class="timeline-content-title">Tech Lead & Backend Engineer – FLIP v2</h4>
+                                    <p class="timeline-desc">Innovex Solutions, Nairobi, Kenya (Feb 2024 - Present)</p>
+                                    <p class="timeline-details">Spearheaded backend development for a microservice-based motor insurance claims platform using Python (FastAPI), PostgreSQL, and Docker, with front-end collaboration in Next.js for responsive workflows.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <h4 class="timeline-title">Tech Lead & Backend Engineer – Motor Insurance Policy Management System</h4>
-                                <p class="timeline-desc">Innovex Solutions, Nairobi, Kenya (Jun 2023 - Jan 2024)</p>
-                                <p class="timeline-details">Developed a scalable proof-of-concept for Mozambique Insurance Association using Python (FastAPI), PostgreSQL, and Docker, aligning with regulatory requirements.</p>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4 class="timeline-content-title">Tech Lead & Backend Engineer – Motor Insurance Policy Management System</h4>
+                                    <p class="timeline-desc">Innovex Solutions, Nairobi, Kenya (Jun 2023 - Jan 2024)</p>
+                                    <p class="timeline-details">Developed a scalable proof-of-concept for Mozambique Insurance Association using Python (FastAPI), PostgreSQL, and Docker, aligning with regulatory requirements.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <h4 class="timeline-title">Technical Lead – eHealthPost</h4>
-                                <p class="timeline-desc">Innovex Solutions, Nairobi, Kenya (Aug 2022 - May 2023)</p>
-                                <p class="timeline-details">Led development of a health insurance portal for Britam Mozambique using Node.js, Express.js, and MariaDB, managing AWS infrastructure for scalability and security.</p>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4 class="timeline-content-title">Technical Lead – eHealthPost</h4>
+                                    <p class="timeline-desc">Innovex Solutions, Nairobi, Kenya (Aug 2022 - May 2023)</p>
+                                    <p class="timeline-details">Led development of a health insurance portal for Britam Mozambique using Node.js, Express.js, and MariaDB, managing AWS infrastructure for scalability and security.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-content">
-                                <h4 class="timeline-title">Full Stack Engineer – MyResque</h4>
-                                <p class="timeline-desc">Innovex Solutions, Nairobi, Kenya (Jul 2020 - Aug 2022)</p>
-                                <p class="timeline-details">Developed mobile and web platforms using Node.js, Express.js, Angular, and Next.js, with Firebase for authentication and data management.</p>
+                            <div class="timeline-item">
+                                <div class="timeline-content">
+                                    <h4 class="timeline-content-title">Full Stack Engineer – MyResque</h4>
+                                    <p class="timeline-desc">Innovex Solutions, Nairobi, Kenya (Jul 2020 - Aug 2022)</p>
+                                    <p class="timeline-details">Developed mobile and web platforms using Node.js, Express.js, Angular, and Next.js, with Firebase for authentication and data management.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="download-cv">
-                    <a href="assets/cv.pdf" class="download-btn" download>Download CV</a>
+                    <a href="assets/cv.pdf" class="download-btn" download>📄 Download CV</a>
                 </div>
             </div>
         </div>
     </div>
-
-    <script src="js/script.js"></script>
 </body>
+<script src="js/script.js"></script>
 </html>
